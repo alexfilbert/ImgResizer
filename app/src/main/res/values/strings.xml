@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ImgResizer</string>
+    <string name="jpeg_quality_text">JPEG Quality</string>
+    <string name="resolution_scale_text">Resolution Scale</string>
+    <string name="save">Save</string>
+    <string name="preview">Preview</string>
+
 </resources>
