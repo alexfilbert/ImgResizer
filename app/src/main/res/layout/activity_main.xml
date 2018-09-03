@@ -19,15 +19,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_image_24dp" />
+        android:padding="96dp"
+        android:onClick="openImgClick"
+        app:srcCompat="@drawable/ic_add_a_photo_24dp" />
 
     <SeekBar
         android:id="@+id/jpegQualitySlider"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:max="100"
-        android:progress="100"
+        android:max="99"
+        android:progress="99"
         android:thumb="@drawable/ic_adjust_24dp"
         app:layout_constraintBottom_toTopOf="@+id/resolutionScaleText"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +40,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:max="100"
+        android:max="99"
         android:progress="100"
         android:thumb="@drawable/ic_adjust_24dp"
         app:layout_constraintBottom_toTopOf="@id/saveButton"
@@ -83,6 +85,7 @@
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:onClick="saveButtonClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
@@ -101,7 +104,20 @@
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:onClick="previewButtonClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/addImageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="@string/add_img"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imagePreview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>

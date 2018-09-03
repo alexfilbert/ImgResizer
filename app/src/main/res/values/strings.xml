@@ -4,5 +4,6 @@
     <string name="resolution_scale_text">Resolution Scale</string>
     <string name="save">Save</string>
     <string name="preview">Preview</string>
+    <string name="add_img">Open Image</string>
 
 </resources>
